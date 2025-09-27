@@ -1,268 +1,334 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Publiar - Descubre los Mejores Restaurantes del Eje Cafetero</title>
+    <title>A Puebliar - Descubre los Mejores Restaurantes del Eje Cafetero</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="/styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     Header 
     <header class="header">
         <div class="container">
             <div class="nav">
                 <div class="logo">
-                    <h2>A Publiar</h2>
+                    <h2>A Puebliar</h2>
                 </div>
                 <nav class="nav-links">
                     <a href="#inicio">Inicio</a>
                     <a href="#restaurantes">Restaurantes</a>
                     <a href="#como-funciona">Cómo Funciona</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#contact">Contacto</a>
                 </nav>
-                <button class="cta-button">Descargar App</button>
             </div>
         </div>
     </header>
 
-     Hero Section 
-    <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Descubre los Sabores Auténticos del Eje Cafetero</h1>
-                    <p>Conecta con la cultura gastronómica de Caldas, Quindío y Risaralda. Encuentra restaurantes únicos, platos tradicionales y experiencias culinarias que te acercarán a la esencia de nuestra región cafetera.</p>
-                    <div class="hero-buttons">
-                        <button class="primary-button">Explorar Restaurantes</button>
-                        <button class="secondary-button">Ver Demo</button>
+```
+<section id="inicio" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Descubre los Sabores Auténticos del Eje Cafetero</h1>
+                <p>Conecta con la cultura gastronómica de Caldas, Quindío y Risaralda. Encuentra restaurantes únicos, platos tradicionales y experiencias culinarias que te acercarán a la esencia de nuestra región cafetera.</p>
+                <div class="hero-buttons">
+                    <button class="primary-button">Explorar Restaurantes</button>
+                    <button class="secondary-button">Ver Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Restaurantes</span>
                     </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Restaurantes</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">50k+</span>
-                            <span class="stat-label">Usuarios</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">4.8</span>
-                            <span class="stat-label">Calificación</span>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number">50k+</span>
+                        <span class="stat-label">Usuarios</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">Calificación</span>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="/colombian-coffee-region-restaurant-with-traditiona.jpg" alt="Restaurante tradicional del Eje Cafetero">
+            </div>
+            <div class="hero-image">
+                <img src="Imagenes/inicio.png" alt="Restaurante tradicional del Eje Cafetero">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="restaurantes" class="featured-restaurants">
+    <div class="container">
+        <div class="section-header">
+            <h2>Restaurantes Destacados</h2>
+            <p>Descubre los lugares más auténticos y mejor calificados del Eje Cafetero</p>
+        </div>
+        
+        <div class="restaurants-grid">
+            <!-- Card 1 -->
+            <div class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="Imagenes/traditional-colombian-restaurant-interior-with-woo.jpg" alt="La Fonda Paisa">
+                    <div class="restaurant-badge">Destacado</div>
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-header">
+                        <h3>La Fonda Paisa</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-number">4.8</span>
+                        </div>
+                    </div>
+                    <p class="location">📍 Manizales, Caldas</p>
+                    <p class="description">Auténtica cocina tradicional paisa en el corazón de Manizales</p>
+                    
+                    <div class="menu-recommendations">
+                        <h4>Recomendaciones</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <span class="item-name">Bandeja Paisa Completa</span>
+                                <span class="item-price">$28,000</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Sancocho Antioqueño</span>
+                                <span class="item-price">$22,000</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Arepa de Chócolo</span>
+                                <span class="item-price">$8,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="restaurant-button">Ver Detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="Imagenes/modern-coffee-shop-in-colombian-mountains-with-spe.jpg" alt="Café de la Montaña">
+                    <div class="restaurant-badge">Nuevo</div>
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-header">
+                        <h3>Café de la Montaña</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-number">4.6</span>
+                        </div>
+                    </div>
+                    <p class="location">📍 Armenia, Quindío</p>
+                    <p class="description">Experiencia gastronómica única con vista a los cafetales</p>
+                    
+                    <div class="menu-recommendations">
+                        <h4>Recomendaciones</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <span class="item-name">Trucha al Café</span>
+                                <span class="item-price">$32,000</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Café Especial de Origen</span>
+                                <span class="item-price">$12,000</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Postre de Café y Panela</span>
+                                <span class="item-price">$15,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="restaurant-button">Ver Detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="restaurant-card">
+                <div class="restaurant-image">
+                    <img src="Imagenes/quindiano.png" alt="El Rincón Quindiano">
+                    <div class="restaurant-badge">Popular</div>
+                </div>
+                <div class="restaurant-info">
+                    <div class="restaurant-header">
+                        <h3>El Rincón Quindiano</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-number">4.9</span>
+                        </div>
+                    </div>
+                    <p class="location">📍 Pereira, Risaralda</p>
+                    <p class="description">Sabores tradicionales con un toque moderno y acogedor</p>
+                    
+                    <div class="menu-recommendations">
+                        <h4>Recomendaciones</h4>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <span class="item-name">Lechona Tolimense</span>
+                                <span class="item-price">$25,000</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Patacones con Hogao</span>
+                                <span class="item-price">$18,000</span>
+                            </div>
+                            <div class="menu-item">
+                                <span class="item-name">Mazamorra con Panela</span>
+                                <span class="item-price">$10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="restaurant-button">Ver Detalles</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-     Featured Restaurants 
-    <section id="restaurantes" class="featured-restaurants">
-        <div class="container">
-            <div class="section-header">
-                <h2>Restaurantes Destacados</h2>
-                <p>Descubre los lugares más auténticos y mejor calificados del Eje Cafetero</p>
+<section id="como-funciona" class="how-it-works">
+    <div class="container">
+        <div class="section-header">
+            <h2>Cómo Funciona A Puebliar</h2>
+            <p>Descubre nuevos sabores en tres simples pasos</p>
+        </div>
+        
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-icon">🔍</div>
+                <h3>Explora</h3>
+                <p>Navega por nuestra selección curada de restaurantes del Eje Cafetero, filtrados por ubicación, tipo de cocina y calificaciones.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">🍽️</div>
+                <h3>Descubre</h3>
+                <p>Conoce los platos recomendados, precios, y lee reseñas auténticas de otros amantes de la gastronomía regional.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">📍</div>
+                <h3>Visita</h3>
+                <p>Obtén direcciones precisas, horarios de atención y reserva tu mesa para vivir una experiencia culinaria única.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="contact">
+    <div class="container">
+        <div class="contact-content">
+            <h2>¡Conecta con Nosotros!</h2>
+            <p class="contact-subtitle">¿Tienes preguntas? ¿Quieres registrar tu restaurante? Estamos aquí para ayudarte a descubrir y compartir los mejores sabores del Eje Cafetero.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email</h4>
+                    <p>Apueblear.E@gmail.com<br>
+                    Respuesta en 24 horas</p>
+                </div>
+                
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h4>Ubicación</h4>
+                    <p>Pereira, Risaralda<br>
+                    Eje Cafetero, Colombia</p>
+                </div>
             </div>
             
-            <div class="restaurants-grid">
-                 Restaurant 1 
-                <div class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="/traditional-colombian-restaurant-interior-with-woo.jpg" alt="La Fonda Paisa">
-                        <div class="restaurant-badge">Destacado</div>
-                    </div>
-                    <div class="restaurant-info">
-                        <div class="restaurant-header">
-                            <h3>La Fonda Paisa</h3>
-                            <div class="rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating-number">4.8</span>
-                            </div>
-                        </div>
-                        <p class="location">📍 Manizales, Caldas</p>
-                        <p class="description">Auténtica cocina tradicional paisa en el corazón de Manizales</p>
-                        
-                        <div class="menu-recommendations">
-                            <h4>Recomendaciones</h4>
-                            <div class="menu-items">
-                                <div class="menu-item">
-                                    <span class="item-name">Bandeja Paisa Completa</span>
-                                    <span class="item-price">$28,000</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="item-name">Sancocho Antioqueño</span>
-                                    <span class="item-price">$22,000</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="item-name">Arepa de Chócolo</span>
-                                    <span class="item-price">$8,000</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="restaurant-button">Ver Detalles</button>
-                    </div>
-                </div>
-
-                 Restaurant 2 
-                <div class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="/modern-coffee-shop-in-colombian-mountains-with-spe.jpg" alt="Café de la Montaña">
-                        <div class="restaurant-badge">Nuevo</div>
-                    </div>
-                    <div class="restaurant-info">
-                        <div class="restaurant-header">
-                            <h3>Café de la Montaña</h3>
-                            <div class="rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="rating-number">4.6</span>
-                            </div>
-                        </div>
-                        <p class="location">📍 Armenia, Quindío</p>
-                        <p class="description">Experiencia gastronómica única con vista a los cafetales</p>
-                        
-                        <div class="menu-recommendations">
-                            <h4>Recomendaciones</h4>
-                            <div class="menu-items">
-                                <div class="menu-item">
-                                    <span class="item-name">Trucha al Café</span>
-                                    <span class="item-price">$32,000</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="item-name">Café Especial de Origen</span>
-                                    <span class="item-price">$12,000</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="item-name">Postre de Café y Panela</span>
-                                    <span class="item-price">$15,000</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="restaurant-button">Ver Detalles</button>
-                    </div>
-                </div>
-
-                 Restaurant 3 
-                <div class="restaurant-card">
-                    <div class="restaurant-image">
-                        <img src="/placeholder.svg?height=200&width=300" alt="El Rincón Quindiano">
-                        <div class="restaurant-badge">Popular</div>
-                    </div>
-                    <div class="restaurant-info">
-                        <div class="restaurant-header">
-                            <h3>El Rincón Quindiano</h3>
-                            <div class="rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating-number">4.9</span>
-                            </div>
-                        </div>
-                        <p class="location">📍 Pereira, Risaralda</p>
-                        <p class="description">Sabores tradicionales con un toque moderno y acogedor</p>
-                        
-                        <div class="menu-recommendations">
-                            <h4>Recomendaciones</h4>
-                            <div class="menu-items">
-                                <div class="menu-item">
-                                    <span class="item-name">Lechona Tolimense</span>
-                                    <span class="item-price">$25,000</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="item-name">Patacones con Hogao</span>
-                                    <span class="item-price">$18,000</span>
-                                </div>
-                                <div class="menu-item">
-                                    <span class="item-name">Mazamorra con Panela</span>
-                                    <span class="item-price">$10,000</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="restaurant-button">Ver Detalles</button>
-                    </div>
+            <div class="contact-cta">
+                <h3>¿Listo para unirte a nuestra comunidad gastronómica?</h3>
+                <p>Ya seas propietario de un restaurante o un amante de la buena comida, queremos conocerte.</p>
+                
+                <div class="contact-buttons">
+                    <a href="mailto:Apueblear.E@gmail.com" class="btn btn-primary">📧 Enviar Email</a>
+                    <a href="https://wa.me/573101234567" class="btn btn-secondary" target="_blank">💬 WhatsApp</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-     How It Works 
-    <section id="como-funciona" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>Cómo Funciona A Publiar</h2>
-                <p>Descubre nuevos sabores en tres simples pasos</p>
-            </div>
+<!-- Script -->
+<script>
+    // Animaciones hover
+    const contactItems = document.querySelectorAll('.contact-item');
+    
+    contactItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+
+    // Seguimiento de clics
+    document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            const buttonType = this.textContent.trim();
+            console.log(`Usuario hizo clic en: ${buttonType}`);
             
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-icon">🔍</div>
-                    <h3>Explora</h3>
-                    <p>Navega por nuestra selección curada de restaurantes del Eje Cafetero, filtrados por ubicación, tipo de cocina y calificaciones.</p>
+            // Efecto de clic
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        });
+    });
+</script>
+
+<footer  class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>A Puebliar</h3>
+                <p>Conectando personas con los sabores auténticos del Eje Cafetero colombiano.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
                 </div>
-                <div class="step">
-                    <div class="step-icon">🍽️</div>
-                    <h3>Descubre</h3>
-                    <p>Conoce los platos recomendados, precios, y lee reseñas auténticas de otros amantes de la gastronomía regional.</p>
-                </div>
-                <div class="step">
-                    <div class="step-icon">📍</div>
-                    <h3>Visita</h3>
-                    <p>Obtén direcciones precisas, horarios de atención y reserva tu mesa para vivir una experiencia culinaria única.</p>
-                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="#restaurantes">Restaurantes</a></li>
+                    <li><a href="#como-funciona">Cómo Funciona</a></li>
+                    <li><a href="#">Ciudades</a></li>
+                    <li><a href="#">Tipos de Cocina</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Regiones</h4>
+                <ul>
+                    <li><a href="#">Caldas</a></li>
+                    <li><a href="#">Quindío</a></li>
+                    <li><a href="#">Risaralda</a></li>
+                    <li><a href="#">Tolima</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-     Footer 
-    <footer id="contacto" class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>A Publiar</h3>
-                    <p>Conectando personas con los sabores auténticos del Eje Cafetero colombiano.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Twitter</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Explorar</h4>
-                    <ul>
-                        <li><a href="#restaurantes">Restaurantes</a></li>
-                        <li><a href="#como-funciona">Cómo Funciona</a></li>
-                        <li><a href="#">Ciudades</a></li>
-                        <li><a href="#">Tipos de Cocina</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Soporte</h4>
-                    <ul>
-                        <li><a href="#">Centro de Ayuda</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Términos de Servicio</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Regiones</h4>
-                    <ul>
-                        <li><a href="#">Caldas</a></li>
-                        <li><a href="#">Quindío</a></li>
-                        <li><a href="#">Risaralda</a></li>
-                        <li><a href="#">Tolima</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 A Publiar. Todos los derechos reservados.</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 A Puebliar. Todos los derechos reservados.</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
+
 </body>
 </html>
